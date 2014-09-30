@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Ariel Allon]]></title>
+  <link href="http://arielallon.github.io/atom.xml" rel="self"/>
+  <link href="http://arielallon.github.io/"/>
+  <updated>2014-09-30T13:59:38-05:00</updated>
+  <id>http://arielallon.github.io/</id>
+  <author>
+    <name><![CDATA[Ariel Allon]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Multitail. You Can Thank Me Later]]></title>
+    <link href="http://arielallon.github.io/blog/2014/09/30/multitail-you-can-thank-me-later/"/>
+    <updated>2014-09-30T13:49:30-05:00</updated>
+    <id>http://arielallon.github.io/blog/2014/09/30/multitail-you-can-thank-me-later</id>
+    <content type="html"><![CDATA[<p><code>multitail</code> is an awesome utility I just came across and highly recommend installing it.
+Looks like it&rsquo;s part of apt-get/yum/homebrew, so installing should be painless.</p>
+
+<p>You can use it to &lsquo;tail&rsquo; multiple inputs in one screen. This is incredibly handy if you want to tail the same log file on a multi-server setup, where the traffic could be split between the servers and logs could end up anywhere.</p>
+
+<p>For example:</p>
+
+<pre><code>multitail 
+-l "ssh server01 tail -f /var/www/html/example.com/var/log/soap-response-times.log" 
+-L "ssh server02 tail -f /var/www/html/example.com/var/log/soap-response-times.log" 
+-L "ssh server03 tail -f /var/www/html/example.com/var/log/soap-response-times.log"
+</code></pre>
+
+<p>will <code>tail</code> that file on each server all from the comfort of one screen on my local machine.
+If you want them separated within that one screen so you can still tell where each came from, just change the <code>-L</code>s to <code>-l</code>s.
+(It can do plenty more, like regex filtering of <code>tail</code> output. See <a href="http://www.vanheusden.com/multitail/">official site</a> and <a href="http://linux.die.net/man/1/multitail">man page</a>.)</p>
+
+<p>Note, this works best if you have your .ssh/config file set up and using <code>IdentityFile</code>s (e.g. keypairs). Which you should. &lsquo;Cause it is amazing. And will save you lots of time and annoyance. <a href="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/">http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/</a></p>
+
+<p>I will accept your thanks in the form of beer.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kiddush Club: Laphroaig 18]]></title>
+    <link href="http://arielallon.github.io/blog/2014/03/14/kiddush-club-laphroaig-18/"/>
+    <updated>2014-03-14T16:09:43-05:00</updated>
+    <id>http://arielallon.github.io/blog/2014/03/14/kiddush-club-laphroaig-18</id>
+    <content type="html"><![CDATA[<p>Well, looks like friday kiddush club in the office will be back on now that friday&rsquo;s are longer. We&rsquo;re not officially back in business yet but there is a sampling of a personal collection today: Laphrooaig 18 year. It&rsquo;s a rich, warm, smoky taste. Considering how strong it is in the mouth, it&rsquo;s surprisingly not noticeable in the throat. Would happily drink it again.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Because Why Not?]]></title>
+    <link href="http://arielallon.github.io/blog/2014/02/10/because-why-not/"/>
+    <updated>2014-02-10T19:09:32-06:00</updated>
+    <id>http://arielallon.github.io/blog/2014/02/10/because-why-not</id>
+    <content type="html"><![CDATA[<p>Always sorta kinda wanted to have a blog. Generally shyed away from the idea.
+But Scott Hanselman <a href="http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx" title="Your Blog is The Engine of Community">convinced me</a>.
+At least initially, this will be a dumping ground.
+I assume it will feature mostly incoherent, half-complete sentences about coding.
+Hopefully every once in a while there will be slightly more coherent ideas.
+And I&rsquo;m guessing it won&rsquo;t all focus on code either.</p>
+
+<p>Good night, and keep watching the skis.</p>
+]]></content>
+  </entry>
+  
+</feed>
